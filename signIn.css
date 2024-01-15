@@ -68,27 +68,174 @@ body {
 }
 
 
-.join {
+.sign {
     text-align: center;
-    margin-top: 125px;
+    margin-top: 100px;
     font-size: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
-
-.join span {
+.sign span {
     color: #F9B75D;
 }
 
-.join-img img {
-    border-radius: 30px;
-    float: left;
-    max-width: 600px;
-    border-radius: 18px;
+.email-form {
+    align-items: center;
+}
+
+.email {
+    height: 540px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    padding: 50px 35px;
+}
+
+
+
+.email * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.email .input {
+    border: 1px solid #F9B75D;
+}
+
+
+.signup {
+    height: 800px;
+    width: 1700px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 62%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    padding: 50px 35px;
+}
+
+
+
+.signup * {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.register {
+    align-items: center;
+}
+
+
+
+label {
     display: block;
-    margin-left: 90px;
-    margin-right: 30px;
-    justify-content: center;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tacbox {
+    display: block;
+    padding: 1em;
+    margin: 2em;
+    border: 3px solid #ddd;
+    background-color: #eee;
+    max-width: 800px;
+}
+
+input {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+
+.social {
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div {
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #eaf0fb;
+    text-align: center;
+}
+
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.social .fb {
+    margin-left: 25px;
+}
+
+.social i {
+    margin-right: 4px;
+}
+
+
+.social {
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div {
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #eaf0fb;
+    text-align: center;
+}
+
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.social .fb {
+    margin-left: 25px;
+}
+
+.social i {
+    margin-right: 4px;
 }
 
 .net {
@@ -109,7 +256,7 @@ body {
 .read {
     display: inline-block;
     margin-left: 125px;
-    margin-top: 10px;
+    margin-top: 18px;
     background: #fffffff6;
     border-radius: 40px;
     font-size: 16px;
@@ -135,138 +282,6 @@ body {
     font-size: smaller;
 }
 
-
-
-
-
-
-.search {
-    position: relative;
-    width: 2200px;
-    padding-inline: 5px;
-    padding-left: 280px;
-    margin-left: 300px;
-}
-
-.search form input, form textarea {
-    border: none;
-    outline: none;
-    width: 20%;
-    padding: 18px;
-    background: #ffffff;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 3rem;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-.search textarea {
-    resize: none;
-    height: 220px;
-}
-
-.search form .send {
-    display: inline-block;
-    padding: 10px 42px;
-    background: #F9B75D;
-    border-radius: 15px;
-    font-size: 18px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
-    box-shadow: 0 0 5px #F9B75D, 0 0 25px #F9B75D;
-}
-
-
-.search form .send:hover {
-    box-shadow: 0 0 5px orange,
-        0 0 25px orange, 0 0 50px orange,
-        0 0 100px orange, 0 0 200px orange;
-}
-
-
-.input-box {
-    position: relative;
-    height: 40px;
-    padding-left: 100px;
-    max-width: 55px;
-    width: 100%;
-    margin: 0 140px;
-    border-radius: 6px;
-    background-color: #fff;
-    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.input-box.open {
-    max-width: 350px;
-}
-
-input {
-    position: relative;
-    outline: none;
-    border: none;
-    height: 100%;
-    width: 100%;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
-    background-color: #fff;
-}
-
-.input-box.open {
-    padding: 0 15px 0 65px;
-}
-
-.icon {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    width: 60px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-}
-
-.search-icon,
-.close-icon {
-    position: absolute;
-    top: 50%;
-    font-size: 30px;
-    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.search-icon {
-    color: #4070f4;
-
-    transform: translateY(-50%) rotate(90deg);
-}
-
-.input-box.open .search-icon {
-    transform: translateY(-50%) rotate(0);
-}
-
-.map {
-    padding-bottom: 40%;
-    position: relative;
-}
-
-.map iframe {
-    height: 30%;
-    width: 30%;
-    left: 700px;
-    top: 0px;
-    position: absolute;
-}
-
 .read {
     display: inline-block;
     padding: 12px 28px;
@@ -288,8 +303,6 @@ input {
         0 0 25px orange, 0 0 50px orange,
         0 0 100px orange, 0 0 200px orange;
 }
-
-
 
 
 
@@ -396,11 +409,11 @@ input {
     width: 90%;
     padding: 18px;
     background: #555557;
-    color: #000;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
+    margin-bottom: 0.7rem;
+    border-radius: 0.7rem;
 }
 
 .contact-form textarea {
